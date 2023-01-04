@@ -6,14 +6,16 @@ package com.apiportfolio.apiportfolio.jpa;
 
 import com.apiportfolio.apiportfolio.jpa.exceptions.NonexistentEntityException;
 import com.apiportfolio.apiportfolio.model.Experiencia;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityNotFoundException;
+import jakarta.persistence.Query;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
+
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Query;
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+
 
 /**
  *
